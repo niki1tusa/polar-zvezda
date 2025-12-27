@@ -1,0 +1,29 @@
+@layer utilities {
+	/* shadow */
+	.shadow-default {
+		@apply shadow shadow-neutral-400;
+	}
+	.shadow-soft {
+		@apply shadow-sm shadow-neutral-400;
+	}
+	.shadow-strong {
+		@apply shadow-lg shadow-neutral-400;
+	}
+	/* padding */
+	.p-body {
+		@apply px-[15px];
+	}
+	.p-small {
+		@apply px-3 py-2 md:px-5;
+	}
+	/* flexbox */
+	.flex-center {
+		@apply flex items-center justify-center;
+	}
+	.col-center {
+		@apply flex flex-col items-center justify-center;
+	}
+	.abs-center {
+		@apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+	}
+}
