@@ -1,8 +1,8 @@
 export const HEADER_LINKS = [
-	'Номера',
-	'Ресторан',
-	'Конференции',
-	'Спорт и отдых',
-	'Акции',
-	'Контакты',
+	{ title: 'Номера', link: '/nomera' },
+	{ title: 'Ресторан', link: '/restaurant' },
+	{ title: 'Конференции', link: '/conferences' },
+	{ title: 'Спорт и отдых', link: '/sport-and-relax' },
+	{ title: 'Акции', link: '/offers' },
+	{ title: 'Контакты', link: '/contacts' },
 ];

@@ -6,7 +6,7 @@ type UseQueryProps<T> = {
 	initialData?: T | null;
 	queryKey?: string;
 };
-// TODO: add isFetching
+
 export function useQuery<T>({ url, initialData, queryKey }: UseQueryProps<T>) {
 	const [data, setData] = useState<T | null>(initialData ?? null);
 	const [error, setError] = useState<Error | null>(null);

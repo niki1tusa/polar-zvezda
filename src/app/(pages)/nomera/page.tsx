@@ -1,28 +1,29 @@
-import Header from '@/components/ui/header/header';
+import type { Metadata } from 'next';
+
 import Section from '@/components/ui/section/section';
 import Typography from '@/components/ui/typography/typography';
 
-export default function Home() {
+export const metadata: Metadata = {
+	title: 'Номера',
+};
+
+export default function Page() {
 	return (
 		<>
-			<Section className='bg-[url(/nomera/nomera-hero.jpg)]'>
-				{/* header */}
-				<Section>
-					<Header className='container px-3.75 pt-[1.85714286em] text-white' />
-				</Section>
-				{/* hero */}
-				<Section className='pt-[9em]'>
+			{/* hero */}
+			<Section className='bg-[url(/nomera/nomera-hero.jpg)] pt-[9em] text-white'>
+				<div className='container'>
 					<Typography weight='bold' size='xl'>
 						Home page
 					</Typography>
-				</Section>
+				</div>
 			</Section>
-			<Section fullScreen className='pt-[9em]'>
+			<Section fullScreen className='bg-red-500'>
 				<Typography weight='bold' size='xl'>
 					first block after hero section
 				</Typography>
 			</Section>
-			<Section fullScreen className='pt-[9em]'>
+			<Section fullScreen className='bg-blue-500'>
 				<Typography weight='bold' size='xl'>
 					second block
 				</Typography>

@@ -3,6 +3,7 @@
 @import '../shared/styles/theme.css';
 @import '../shared/styles/utilities.css';
 @import '../shared/styles/components.css';
+@import '../shared/styles/tokens.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -11,7 +12,7 @@
 		@apply border-border outline-ring/50 m-0 p-0;
 	}
 	html {
-		@apply h-dvh w-dvw bg-[#2b1714] text-[16px] text-[#69594F];
+		@apply h-dvh w-dvw bg-[#2b1714] font-sans text-[16px] text-[#69594F];
 	}
 	body {
 		line-height: 1.85714286em;
