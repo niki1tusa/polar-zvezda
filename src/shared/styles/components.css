@@ -2,4 +2,7 @@
 	.form {
 		@apply flex w-full flex-col gap-y-4 border bg-transparent p-6 shadow-sm;
 	}
+	.select-booking {
+		@apply border-b-red justify-between border-b-2 border-transparent p-0 text-lg font-bold;
+	}
 }

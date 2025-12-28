@@ -9,7 +9,7 @@
 	.shadow-strong {
 		@apply shadow-lg shadow-neutral-400;
 	}
-	.container {
+	.container-width {
 		@apply w-[750px] px-3.75 md:w-[970px] lg:w-[1170px];
 	}
 	/* padding */

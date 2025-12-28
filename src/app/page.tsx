@@ -8,7 +8,7 @@ export default function Home() {
 			<Section className='bg-[url(/nomera/nomera-hero.jpg)]'>
 				{/* header */}
 				<Section>
-					<Header className='container px-3.75 pt-[1.85714286em] text-white' />
+					<Header className='container-width px-3.75 pt-[1.85714286em] text-white' />
 				</Section>
 				{/* hero */}
 				<Section className='pt-[9em]'>

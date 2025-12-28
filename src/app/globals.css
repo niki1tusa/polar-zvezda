@@ -9,14 +9,16 @@
 
 @layer base {
 	* {
-		@apply border-border outline-ring/50 m-0 p-0;
+		@apply border-border outline-ring/50 m-0 box-border p-0;
 	}
 	html {
-		@apply h-dvh w-dvw bg-[#2b1714] font-sans text-[16px] text-[#69594F];
+		@apply bg-background text-foreground h-dvh w-dvw font-sans text-[16px];
 	}
 	body {
-		line-height: 1.85714286em;
-		@apply text-foreground mx-auto h-dvh max-w-360 bg-[#2b1714] px-3.75 font-normal;
+		@apply text-foreground bg-background mx-auto h-dvh max-w-360 px-3.75 leading-[1.85714286em] font-normal;
+	}
+	h1 {
+		@apply leading-[1.31818182em];
 	}
 	ul {
 		@apply flex items-center;
@@ -24,5 +26,9 @@
 	button,
 	input[type='checkbox'] {
 		@apply cursor-pointer;
+	}
+	input,
+	select {
+		@apply h-[2.78571429em] leading-[inherit];
 	}
 }

@@ -1,25 +1,21 @@
 @import './circe.css';
-/* background: */
-/* html -  #2b1714 */
-/* полоска бронирования и footer - #2f2320 */
-/* white back - #fffbef */
+
 /* card nomera - #f8f1e1 */
-
-/* breakpoint: */
-/*  min-width: 1200px, 992, 768 */
-
-/* text: */
-/* foregraund sec - #271c1d */
-/* text muted - #a38d7f */
-/* text muted sec - #69594F */
-
 :root {
 	--font-circe: 'Circe';
 	--red: #b61e28;
 	--deep-red: #9a1625;
+	--light-red: #ff0000;
 	--radius: 0.625rem;
-	--background: oklch(1 0 0);
+	--background: #2b1714;
+	--background-white: #fffbef;
+	--booking: #2f2320;
+	--icons: #5b3228;
+	/* text */
 	--foreground: #ffffff;
+	--foreground-sec: #271c1d;
+	--muted: #a38d7f;
+	--muted-sec: #69594f;
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.141 0.005 285.823);
 	--popover: oklch(1 0 0);
@@ -28,48 +24,32 @@
 	--primary-foreground: oklch(0.985 0 0);
 	--secondary: oklch(0.967 0.001 286.375);
 	--secondary-foreground: oklch(0.21 0.006 285.885);
-	--muted: oklch(0.967 0.001 286.375);
 	--muted-foreground: oklch(0.552 0.016 285.938);
 	--accent: oklch(0.967 0.001 286.375);
 	--accent-foreground: oklch(0.21 0.006 285.885);
-	--destructive: oklch(0.577 0.245 27.325);
 	--border: oklch(0.92 0.004 286.32);
 	--input: oklch(0.92 0.004 286.32);
 	--ring: oklch(0.705 0.015 286.067);
 }
-
-.dark {
-	--background: oklch(0.141 0.005 285.823);
-	--foreground: oklch(0.985 0 0);
-	--card: oklch(0.21 0.006 285.885);
-	--card-foreground: oklch(0.985 0 0);
-	--popover: oklch(0.21 0.006 285.885);
-	--popover-foreground: oklch(0.985 0 0);
-	--primary: oklch(0.92 0.004 286.32);
-	--primary-foreground: oklch(0.21 0.006 285.885);
-	--secondary: oklch(0.274 0.006 286.033);
-	--secondary-foreground: oklch(0.985 0 0);
-	--muted: oklch(0.274 0.006 286.033);
-	--muted-foreground: oklch(0.705 0.015 286.067);
-	--accent: oklch(0.274 0.006 286.033);
-	--accent-foreground: oklch(0.985 0 0);
-	--destructive: oklch(0.704 0.191 22.216);
-	--border: oklch(1 0 0 / 10%);
-	--input: oklch(1 0 0 / 15%);
-	--ring: oklch(0.552 0.016 285.938);
-}
 @theme inline {
 	--color-background: var(--background);
+	--color-background-white: var(--background-white);
 	--color-foreground: var(--foreground);
+	--color-booking: var(--booking);
 	--font-sans: var(--font-circe);
 	--color-ring: var(--ring);
 	--color-input: var(--input);
 	--color-border: var(--border);
-	--color-destructive: var(--destructive);
 	--color-accent-foreground: var(--accent-foreground);
 	--color-accent: var(--accent);
 	--color-muted-foreground: var(--muted-foreground);
 	--color-muted: var(--muted);
+	--color-foreground-sec: var(--foreground-sec);
+	--color-muted-sec: var(--muted-sec);
+	--color-icons: var(--icons);
+	--color-red: var(--red);
+	--color-light-red: var(--light-red);
+	--color-deep-red: var(--deep-red);
 	--color-secondary-foreground: var(--secondary-foreground);
 	--color-secondary: var(--secondary);
 	--color-primary-foreground: var(--primary-foreground);
