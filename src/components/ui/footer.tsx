@@ -6,20 +6,19 @@ import { FOOTER_LINKS } from '@/shared/config/footer-link-config';
 import { KRISTALL_URL, PRIVACY_PAGE, SITE_CREATOR, TEL } from '@/shared/constants/global-constants';
 
 import Section from './section/section';
-import Typography from './typography/typography';
 
 export default function Footer() {
 	return (
-		<div className='fixed bottom-0 w-352.5'>
-			<Section className='bg-booking p-[0.714286em]'>
-				<div className='container-width mt-[2.5em] mb-[1.4em] flex items-center justify-between'>
+		<div className='bg-booking max-w-352.5'>
+			<Section className='mt-[2.5em] mb-[1.4em] p-[0.714286em]'>
+				<div className='container-width -mt-5 flex flex-col items-center gap-2.5 sm:flex-row sm:justify-between sm:gap-0'>
 					<Link href='/'>
 						<Image src='/logo/logo-small.png' alt='logo' width={96} height={85} />
 					</Link>
 					<Link href={KRISTALL_URL} target='_blank'>
 						<Image src='/logo/footer-logo.png' alt='kristall-logo' width={262} height={66} />
 					</Link>
-					<ul className='flex-center gap-[1.25em] text-[1rem]'>
+					<ul className='flex flex-col items-center justify-center gap-[1.25em] text-[1rem] sm:flex-row'>
 						{FOOTER_LINKS.map(item => (
 							<li
 								key={item.title}
@@ -28,28 +27,31 @@ export default function Footer() {
 								<Link href={item.link}>{item.title}</Link>
 							</li>
 						))}
-						<span className='flex-center gap-2.5'>
+						<li className='flex-center mr-12 gap-2.5 sm:mr-0'>
 							<Phone size={18} className='text-icons' />
 							<Link className='hover:underline' href={TEL}>
 								+7 (821) 445-50-20
 							</Link>
-						</span>
+						</li>
 					</ul>
 				</div>
 			</Section>
-			<Section className='bg-[#291f1e]'>
-				<div className='container-width flex flex-col'>
-					<Typography className='text-[#66392a]'>
-						© 2026 Гостиничный комплекс «Полярная звезда» Улица Нефтяников, 39 (Усинск)
-					</Typography>
+			<Section className='bg-[#291f1e] text-[0.875rem] font-normal'>
+				<div className='container-width flex flex-col py-[1.5em]'>
+					<span className='leading-[1.4] text-[#66392a]'>
+						{/* TODO: text size */}
+						© 2026 Гостиничный комплекс «Полярная звезда» <br /> Улица Нефтяников, 39 (Усинск)
+					</span>
 					<div className='flex w-full items-center justify-between'>
-						<Link href={PRIVACY_PAGE}>Политика конфиденциальности</Link>
-						<span>
-							Разработка и поддержка{' '}
+						<Link href={PRIVACY_PAGE} className='text-deep-red'>
+							Политика конфиденциальности
+						</Link>
+						<div>
+							<span className='text-[#66392a]'>Разработка и поддержка</span>{' '}
 							<Link target='_blank' href={SITE_CREATOR} className='text-deep-red underline'>
 								&ldquo;{SITE_CREATOR}&ldquo;
 							</Link>
-						</span>
+						</div>
 					</div>
 				</div>
 			</Section>

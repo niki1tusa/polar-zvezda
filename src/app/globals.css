@@ -12,10 +12,10 @@
 		@apply border-border outline-ring/50 m-0 box-border p-0;
 	}
 	html {
-		@apply bg-background text-foreground h-dvh w-dvw font-sans text-[16px];
+		@apply bg-background text-foreground h-dvh w-dvw font-sans text-[14px] lg:text-[16px];
 	}
 	body {
-		@apply text-foreground bg-background mx-auto h-dvh max-w-360 px-3.75 leading-[1.85714286em] font-normal;
+		@apply text-foreground bg-background 1xl:px-3.75 mx-auto flex h-dvh max-w-360 flex-col overflow-x-hidden p-0 leading-[1.85714286em] font-normal;
 	}
 	h1 {
 		@apply leading-[1.31818182em];

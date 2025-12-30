@@ -3,4 +3,5 @@ export const KRISTALL_URL = 'http://sk-kristall.ru/';
 export const KRISTALL_MAIL = 'plehanova@sk-kristall.ru';
 export const MAIL_BOOK = 'book@polar-zvezda.ru';
 export const SITE_CREATOR = 'https://itwebs.by/';
-export const PRIVACY_PAGE = '/politika-konfidencialnosti';
+export const PRIVACY_PAGE = '/privacy-police';
+export const SITE_URL = 'http://polar-zvezda.ru/';

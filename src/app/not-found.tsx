@@ -1,6 +1,4 @@
 import BookingBlock from '@/components/ui/booking-block';
-import Footer from '@/components/ui/footer';
-import Header from '@/components/ui/header/header';
 import HeroBlock from '@/components/ui/hero-block';
 import Section from '@/components/ui/section/section';
 import Typography from '@/components/ui/typography/typography';
@@ -12,10 +10,9 @@ import NotFoundClient from '../components/ui/NotFoundClient';
 export default function NotFound() {
 	return (
 		<>
-			<Header />
 			<HeroBlock title='Бронирование' />
 			<BookingBlock />
-			<Section className='bg-background-white'>
+			<Section>
 				<div className='container-width flex flex-col py-[3.71428571em]'>
 					<Typography className='text-light-red text-[16px]'>
 						<b>404</b>: Запрошенная страница с адресом <NotFoundClient /> не найдена.
@@ -28,7 +25,6 @@ export default function NotFound() {
 					</Typography>
 				</div>
 			</Section>
-			<Footer />
 		</>
 	);
 }

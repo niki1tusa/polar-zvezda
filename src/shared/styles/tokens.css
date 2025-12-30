@@ -8,4 +8,5 @@
 @custom-variant md  (@media (min-width: 992px));
 @custom-variant lg  (@media (min-width: 1200px));
 @custom-variant xl  (@media (min-width: 1399px));
+@custom-variant 1xl (@media (min-width: 1440px));
 @custom-variant 2xl (@media (min-width: 1650px));

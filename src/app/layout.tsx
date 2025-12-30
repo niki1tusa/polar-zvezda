@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 
+import Footer from '@/components/ui/footer';
+import Header from '@/components/ui/header/header';
+
 import { SITE_NAME } from '@/shared/constants/seo-constants';
 
 import './globals.css';
@@ -19,7 +22,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`antialiased`}>{children}</body>
+			<body className={`antialiased`}>
+				<Header />
+				<main className='bg-background-white flex-1'>{children}</main>
+				<Footer />
+			</body>
 		</html>
 	);
 }
